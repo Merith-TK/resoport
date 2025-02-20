@@ -1,0 +1,6 @@
+.steamcmd/
+Cache/
+Data/
+Logs/
+*.exe
+*.log
