@@ -1,4 +1,4 @@
-module github.com/Merith-TK/Resonite.Portable
+module github.com/Merith-TK/resoport
 
 go 1.24.0
 

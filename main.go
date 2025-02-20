@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/Merith-TK/Resonite.Portable/steam"
+	"github.com/Merith-TK/resoport/steam"
 	"github.com/Merith-TK/utils/debug"
 )
 
