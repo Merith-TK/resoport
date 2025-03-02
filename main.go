@@ -39,7 +39,15 @@ func main() {
 			}
 		}
 		// Run the desired game with the provided arguments
-		cmd := exec.Command(".steamcmd/steamapps/common/Resonite/Resonite.exe", "-DataPath", filepath.Join(curPWD, "Data"), "-CachePath", filepath.Join(curPWD, "Cache"), "--UserPath", filepath.Join(curPWD, "User"), "--LogPath", filepath.Join(curPWD, "Logs"), "--AppID", appid)
+		cmdArguments := []string{
+			"-DataPath", filepath.Join(curPWD, "Data"),
+			"-CachePath", filepath.Join(curPWD, "Cache"),
+			"--UserPath", filepath.Join(curPWD, "User"),
+			"--LogPath", filepath.Join(curPWD, "Logs"),
+			"-SkipIntroTutorial",
+			"-DoNotAutoLoadHome",
+		}
+		cmd := exec.Command(".steamcmd/steamapps/common/Resonite/Resonite.exe", cmdArguments...)
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		cmd.Stdin = os.Stdin
